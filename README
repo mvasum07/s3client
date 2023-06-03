@@ -1,0 +1,88 @@
+*********************************************GIT*********************************************************
+
+#Update your System.
+
+apt-get update -y
+apt-get install git -y
+
+#Check the Git version.
+#Update your System.
+
+apt-get update -y
+apt-get install git -y
+
+#Check the Git version.
+
+git --version
+
+#GIT Configure.
+
+git config --global user.name "<yourname>"
+git config --global user.email "youremailid"
+git config --list
+
+
+#How to Commit,Push the code in Github.
+
+Create a directory and got inside it.
+
+git init (It will create a hidden directory to check use $ls -a)
+
+Create some file.(Put some data in the file)
+
+git status
+git add .
+git commit -m "1st commit form <yourname>"
+git status
+git log
+git show <commit-id>
+
+#You need to goto Github and make a repository.
+give the name for you repository and the Discraption.
+Goto your repository and copy the URL.
+
+git remote add origin <central url>
+git push -u origin master (It will ask for username and password)
+Goto Github and check the repository it will show the commited files.
+
+
+******************************************GIT PULL FOR CODE UPDATE*************************************
+
+NOTE: Use incuser1 for it.
+
+#Update your System.
+
+apt-get update -y
+apt-get install git -y
+
+#Check the Git version.
+#Update your System.
+
+apt-get update -y
+apt-get install git -y
+
+#Check the Git version.
+
+git --version
+
+#How to Pull code form Github.
+
+Create a directory and got inside it.
+
+git init (It will create a hidden directory to check use $ls -a)
+
+git remote add origin <git repo url>
+git pull -u origin master
+git log
+git show <commit-id>
+
+#NOW add some lines in the file.
+
+git status
+git add .
+git commit -m "<yourname>"
+git status
+git log
+git push origin master
+
+
